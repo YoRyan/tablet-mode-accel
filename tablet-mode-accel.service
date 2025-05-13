@@ -1,0 +1,10 @@
+[Unit]
+Description=Software tablet mode switch
+Before=gdm.service
+
+[Service]
+Type=exec
+ExecStart=/usr/local/bin/tablet-mode-accel
+
+[Install]
+WantedBy=graphical.target
